@@ -3,9 +3,9 @@ title: "Home"
 layout: homelay
 permalink: /
 ---
-
-<h1 class="home-hero">{{ site.name }}</h1>
 ## Hey, I'm Sharmila!
+<h1 class="home-hero">{{ site.name }}</h1>
+
 I am a Senoir Technical Lead and independent researcher in insurance and financial services technology, specializing in enterprise generative AI and data privacy. My work focuses on designing privacy-preserving data and AI systems for regulated industries**: architectures that let banks, insurers and other regulated enterprises use generative AI without exposing sensitive customer data to the model.
 
 My central contribution is "reasoning without seeing", a schema-only approach to natural-language-to-SQL in which the AI model generates queries from the database structure alone and never sees the underlying records. Queries run inside the enterprise's own database, and results return directly to the authorized user. I took this system from concept to production at a Fortune 500 property and casualty insurance organization, where it passed full enterprise AI governance certification and was adopted by 150+ teams** across policy, claims, underwriting and testing, with 95% query accuracy** and 90% of data requests moved to self-service**. The architecture is domain-agnostic and applies to banking, healthcare and any setting where data cannot leave its boundary.
