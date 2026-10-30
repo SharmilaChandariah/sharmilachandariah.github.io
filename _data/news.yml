@@ -1,20 +1,22 @@
-# News items shown on the home page sidebar.
-# The 3 most recent are shown; all appear on /allnews.
-# Each entry needs: date, headline
-- date: 6 February, 1986
-  headline: "Appointed to the Rogers Commission investigating the Space Shuttle Challenger disaster"
+# News items shown on the home page sidebar (3 most recent) and on /allnews.
+# Newest first. Each entry needs: date, headline
+- date: 23 September, 2026
+  headline: "Spoke at IEEE RTC Conference & Expo 2026 in Chicago on \"Reasoning Without Seeing,\" privacy-preserving AI for enterprise data."
 
-- date: 1 January, 1980
-  headline: "National Medal of Science awarded by President Carter"
+- date: March 2026
+  headline: "Co-authored paper on ML-based drug abuse prediction published in Springer's Lecture Notes in Electrical Engineering (ICMEET 2025)."
 
-- date: 21 October, 1965
-  headline: "Awarded the Nobel Prize in Physics for contributions to quantum electrodynamics"
+- date: November 2025
+  headline: "Published \"The Importance of Continuous Education in the Insurance Industry.\""
 
-- date: 1 September, 1961
-  headline: "The Feynman Lectures on Physics begins publication"
+- date: November 2024
+  headline: "Invited talk on generative AI application development at the IEEE Region 4 Nexus Conference."
 
-- date: 1 June, 1959
-  headline: "Delivered 'There's Plenty of Room at the Bottom' talk at Caltech APS meeting"
+- date: July 2024
+  headline: "Published \"Best Practices in P&C Policy Administration System Modernization\" in PropertyCasualty360."
 
-- date: 1 January, 1951
-  headline: "Joined the faculty at California Institute of Technology"
+- date: July 2024
+  headline: "Published \"Leveraging Artificial Intelligence in Claims Processing: A Balanced Perspective\" in Claims Journal."
+
+- date: May 2024
+  headline: "Published \"Revolutionizing Insurance: The Transformative Power of AI\" on IndiaAI, India's national AI portal."

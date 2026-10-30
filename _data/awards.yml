@@ -1,7 +1,4 @@
-# Awards and honors, shown on the About page.
+# Awards and honors, shown on the Recognition page.
 # Each entry needs: name
-- name: Nobel Prize in Physics (1965)
-- name: Albert Einstein Award (1954)
-- name: E.O. Lawrence Award (1962)
-- name: Oersted Medal, AAPT (1972)
-- name: National Medal of Science (1979)
+- name: "Executive Vice President (EVP)-level recognition award for the privacy-preserving text-to-SQL platform adopted by 150+ teams"
+- name: "Star Associate Award for designing the Transient Schema for legacy policy data migration"

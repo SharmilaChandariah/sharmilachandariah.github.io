@@ -1,64 +1,59 @@
 ---
-title: "About"
+title: "Recognition"
 layout: page
 permalink: /about/
 ---
 
-# About
+# Recognition
 
 <div class="section-card">
 <div class="pi-card">
 <img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="pi-photo" alt="{{ site.name }}" width="160" height="160">
 <div>
 <h2 class="pi-name">{{ site.name }}</h2>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }}, {{ site.institution }}</p>
+<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }} &middot; {{ site.institution }}</p>
+<p>Designing privacy-preserving data and AI systems for regulated industries. 15+ years across banking and insurance technology.</p>
 <div class="pi-links">
 {% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
-{% if site.links.cv and site.links.cv != "" %}<a href="{{ site.links.cv | prepend: '/' | relative_url }}" class="icon-link" title="CV" aria-label="CV">{% include icon.html name="cv" %}</a>{% endif %}
-{% if site.links.google_scholar and site.links.google_scholar != "" %}<a href="{{ site.links.google_scholar }}" class="icon-link" title="Google Scholar" aria-label="Google Scholar">{% include icon.html name="google-scholar" %}</a>{% endif %}
 {% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>{% endif %}
-{% if site.links.researchgate and site.links.researchgate != "" %}<a href="{{ site.links.researchgate }}" class="icon-link" title="ResearchGate" aria-label="ResearchGate">{% include icon.html name="researchgate" %}</a>{% endif %}
-</div>
-{% if site.data.pi[0].education %}
-<ul style="margin-top: var(--space-4);">
-{% for education in site.data.pi[0].education %}
-<li>{{ education | replace: "-","&#8211;" }}</li>
-{% endfor %}
-</ul>
-{% endif %}
+{% if site.links.orcid and site.links.orcid != "" %}<a href="{{ site.links.orcid }}" class="icon-link" title="ORCID" aria-label="ORCID">{% include icon.html name="orcid" %}</a>{% endif %}
+{% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" class="icon-link" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>{% endif %}
 </div>
 </div>
 </div>
-
-{% if site.data.grants %}
-<div class="section-card">
-<h3>Grants</h3>
-<ul>
-{% for grant in site.data.grants %}
-<li>{{ grant.name }}</li>
-{% endfor %}
-</ul>
 </div>
-{% endif %}
 
 {% if site.data.awards %}
 <div class="section-card">
-<h3>Awards</h3>
+<h3>Awards &amp; Honors</h3>
 <ul>
 {% for award in site.data.awards %}
-<li>{{ award.name | replace: "-","&#8211;" }}</li>
+<li>{{ award.name }}</li>
 {% endfor %}
 </ul>
 </div>
 {% endif %}
 
-{% if site.data.funders %}
 <div class="section-card">
-<h4>Sponsors</h4>
-<div class="sponsor-logos" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-6);">
-{% for funder in site.data.funders %}
-<a href="{{ funder.url }}" target="_blank"><img src="{{ funder.image | prepend: '/images/' | relative_url }}" alt="Funder logo" style="max-height: 80px; max-width: 200px; border-radius: 0;" loading="lazy"></a>
-{% endfor %}
+<h3>Certifications</h3>
+<ul>
+<li>Guidewire Certified ACE (expert-level Guidewire certification)</li>
+</ul>
 </div>
+
+<div class="section-card">
+<h3>Professional Memberships</h3>
+<ul>
+<li>Senior Member, IEEE</li>
+<li>Member, IEEE Computer Society</li>
+</ul>
 </div>
-{% endif %}
+
+<div class="section-card">
+<h3>Experience</h3>
+<ul>
+<li><strong>2020&ndash;present:</strong> Senior Technical Lead, policy administration and enterprise generative AI, Fortune 500 property &amp; casualty insurance organization</li>
+<li><strong>2016&ndash;2020:</strong> Senior Guidewire Developer, Personal Lines Transformation (Guidewire PolicyCenter), national U.S. insurer</li>
+<li><strong>2011&ndash;2016:</strong> Senior Java Developer, multi-vendor ATM software modernization, global bank</li>
+</ul>
+</div>

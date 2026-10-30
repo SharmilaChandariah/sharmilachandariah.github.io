@@ -2,20 +2,16 @@
 # Each entry needs: name, description
 # Optional: authors, website, repo, docs, paper
 
-- name: Path Integral Monte Carlo
-  authors: R. P. Feynman, A. Hibbs
-  website: https://example.com
-  repo: https://github.com
+- name: SchemaAware-NL2SQL
+  authors: Sharmila Devi Chandariah
+  repo: https://github.com/SharmilaChandariah/SchemaAware-NL2SQL
   description: >-
-    A Monte Carlo simulation code for computing quantum mechanical path integrals
-    in many-body systems. Used to study the lambda transition in liquid helium
-    and other quantum statistical mechanics problems.
+    Reference implementation of schema-only natural-language-to-SQL ("reasoning without seeing").
+    The language model receives only database schema metadata, never data rows; generated SQL
+    runs inside the database and results go directly to the user.
 
-- name: QED Diagram Calculator
-  authors: R. P. Feynman
-  website: https://example.com
-  docs: https://example.com/docs
+- name: DocSearchPOCCode
+  authors: Sharmila Devi Chandariah
+  repo: https://github.com/SharmilaChandariah/DocSearchPOCCode
   description: >-
-    A tool for systematically enumerating and evaluating Feynman diagrams in
-    quantum electrodynamics calculations, automating the computation of
-    scattering amplitudes to arbitrary order in perturbation theory.
+    Proof-of-concept retrieval-augmented document search for enterprise policy and procedure content.

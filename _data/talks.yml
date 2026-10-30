@@ -1,59 +1,28 @@
-# Talks, shown on the Talks page in the order listed (newest first is conventional).
+# Talks, newest first.
 # Each entry needs: title, event, year
-# Optional: location, date (free text, e.g. "11 December"), type (invited or contributed;
-#           anything other than invited is listed as contributed), url, slides, video
+# Optional: location, date, type (keynote / invited / guest), url, slides, video
+# Add `slides: https://...` once a deck is public.
 
-- title: Personal observations on the reliability of the Shuttle
-  event: Rogers Commission
-  location: Washington, D.C.
-  year: 1986
+- title: "Reasoning Without Seeing"
+  event: IEEE RTC Conference & Expo 2026 (Programmable Networks track)
+  location: Illinois Institute of Technology, Chicago
+  date: 23 September
+  year: 2026
+  type: conference
+
+- title: "Generative AI Application Development"
+  event: IEEE Region 4 Nexus Conference
+  location: Milwaukee School of Engineering, Milwaukee
+  date: 9 November
+  year: 2024
   type: invited
 
-- title: Simulating physics with computers
-  event: MIT Conference on Physics and Computation
-  year: 1981
-  type: invited
-  slides: https://example.com/slides
+- title: "Generative AI"
+  event: Guest lecture, Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology
+  location: Chennai, India
+  type: guest
 
-- title: Difficulties in applying the variational principle to quantum field theories
-  event: Workshop on Variational Calculations in Quantum Field Theory
-  location: Wangerooge
-  year: 1987
-
-- title: Los Alamos from below
-  event: APS Annual Meeting
-  location: Santa Barbara
-  year: 1975
-  video: https://example.com/video
-
-- title: The parton model
-  event: Third International Conference on High Energy Collisions
-  location: Stony Brook
-  year: 1970
-
-- title: The development of the space-time view of quantum electrodynamics
-  event: Nobel Lecture
-  location: Stockholm
-  year: 1965
-  date: 11 December
-  type: invited
-  url: https://www.nobelprize.org/prizes/physics/1965/feynman/lecture/
-
-- title: The relation of mathematics to physics
-  event: Cornell Messenger Lectures
-  year: 1964
-
-- title: There's plenty of room at the bottom
-  event: Annual Meeting of the American Physical Society
-  location: Caltech
-  year: 1959
-  type: invited
-
-- title: The universal Fermi interaction
-  event: Rochester Conference on High Energy Physics
-  year: 1957
-
-- title: Atomic theory of liquid helium
-  event: International Conference on Theoretical Physics
-  location: Tokyo
-  year: 1953
+- title: "Generative AI"
+  event: Guest lecture, SRM Institute of Science and Technology
+  location: Chennai, India
+  type: guest
