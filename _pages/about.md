@@ -6,23 +6,6 @@ permalink: /about/
 
 # Recognition
 
-<div class="section-card">
-<div class="pi-card">
-<img src="{{ site.photo | prepend: '/images/' | relative_url }}" class="pi-photo" alt="{{ site.name }}" width="160" height="160">
-<div>
-<h2 class="pi-name">{{ site.name }}</h2>
-<p style="font-style: italic; color: var(--text-secondary);">{{ site.title }} &middot; {{ site.institution }}</p>
-<p>Designing privacy-preserving data and AI systems for regulated industries. 15+ years across banking and insurance technology.</p>
-<div class="pi-links">
-{% if site.email %}<a href="mailto:{{ site.email }}" class="icon-link" title="Email" aria-label="Email">{% include icon.html name="envelope" %}</a>{% endif %}
-{% if site.links.github and site.links.github != "" %}<a href="{{ site.links.github }}" class="icon-link" title="GitHub" aria-label="GitHub">{% include icon.html name="github" %}</a>{% endif %}
-{% if site.links.orcid and site.links.orcid != "" %}<a href="{{ site.links.orcid }}" class="icon-link" title="ORCID" aria-label="ORCID">{% include icon.html name="orcid" %}</a>{% endif %}
-{% if site.links.linkedin and site.links.linkedin != "" %}<a href="{{ site.links.linkedin }}" class="icon-link" title="LinkedIn" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>{% endif %}
-</div>
-</div>
-</div>
-</div>
-
 {% if site.data.awards %}
 <div class="section-card">
 <h3>Awards &amp; Honors</h3>

@@ -76,3 +76,41 @@
     flex-wrap: wrap;
   }
 }
+
+// Labeled link list in the profile card (Email, GitHub, ORCID, ...)
+.profile-card .profile-link-list {
+  list-style: none;
+  text-align: left;
+  margin: var(--space-6) 0 0;
+  padding: var(--space-4) 0 0;
+  border-top: 1px solid var(--border-color);
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-2) var(--space-1);
+    color: var(--text-secondary);
+    text-decoration: none;
+    background-image: none;
+    font-size: 0.9375rem;
+    border-radius: var(--radius-md);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+
+    &:hover {
+      color: var(--accent);
+      background-color: var(--accent-light);
+    }
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      flex-shrink: 0;
+      color: var(--text-muted);
+    }
+  }
+}
