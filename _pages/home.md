@@ -3,8 +3,10 @@ title: "Home"
 layout: homelay
 permalink: /
 ---
-## Hey, I'm Sharmila!
+
 <h1 class="home-hero">{{ site.name }}</h1>
+
+## Hey, I'm Sharmila!
 
 I am a Senoir Technical Lead and independent researcher in insurance and financial services technology, specializing in enterprise generative AI and data privacy. My work focuses on designing privacy-preserving data and AI systems for regulated industries**: architectures that let banks, insurers and other regulated enterprises use generative AI without exposing sensitive customer data to the model.
 
