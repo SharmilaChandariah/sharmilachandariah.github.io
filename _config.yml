@@ -47,10 +47,10 @@ analytics:
 # Each name is a page in _pages/ (lowercase). `label` changes the
 # navbar text without changing the URL.
 nav_pages:
+  - name: research
   - name: publications
   - name: talks
   - name: service
-  - name: research
   - name: about
     label: Recognition
 
