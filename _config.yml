@@ -5,61 +5,52 @@ name: "Sharmila Devi Chandariah"
 title: "Senior Technical Lead"
 institution: "Insurance & Financial Services Technology"
 email: sharmiladevichandariah@ieee.org
-photo: Sharmila_Pic.jpeg      # must match the photo file you upload to images/
+photo: Sharmila_Pic.jpeg
 
 # ============================================================
 # STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
-  google_scholar: 
-  github: "https://github.com/sharmilachandariah.github.io"
+  google_scholar: ""
+  github: "https://github.com/SharmilaChandariah"
   researchgate: ""
-  orcid: "0009-0009-6530-6450"
+  orcid: "https://orcid.org/0009-0009-6530-6450"
   twitter: ""
-  linkedin: "www.linkedin.com/in/sharmiladevichandariah"
-  cv: ""  # e.g., "papers/cv.pdf"
+  linkedin: "https://www.linkedin.com/in/sharmiladevichandariah"
+  cv: ""
 
 # ============================================================
 # STEP 3: Site Settings
 # ============================================================
-accent_color: "#1a7a6d"      # theme color; light and dark variants are derived automatically
-dark_mode: true              # set to false to disable dark mode entirely
-math: false                  # true loads MathJax on every page; or add `math: true` to individual pages
-description: "Academic webpage of Dr. Richard Feynman"
+accent_color: "#1a7a6d"
+dark_mode: true
+math: false
+description: "Personal website of Sharmila Devi Chandariah, technology leader in insurance and financial services technology, specializing in enterprise generative AI and privacy-preserving data and AI systems for regulated industries."
 
-# When deploying with the included GitHub Actions workflow these are filled
-# in automatically from your Pages settings (user site, project site, or
-# custom domain). Set them only if you host the site somewhere else.
 url: ""
 baseurl: ""
 
-# Analytics -- fill in whichever service you use; leave the rest blank.
 analytics:
-  google_id: ""          # Google Analytics 4 measurement ID, e.g. G-XXXXXXXXXX
-  plausible_domain: ""   # Plausible: your site's domain, e.g. jsmith.github.io
-  umami_website_id: ""   # Umami: website ID (and umami_src if self-hosted)
-  umami_src: ""          #   default https://cloud.umami.is/script.js
-  goatcounter: ""        # GoatCounter: your code, e.g. jsmith (for jsmith.goatcounter.com)
+  google_id: ""
+  plausible_domain: ""
+  umami_website_id: ""
+  umami_src: ""
+  goatcounter: ""
 
 # ============================================================
-# STEP 4: Choose Your Pages (comment out any you don't need)
+# STEP 4: Choose Your Pages
 # ============================================================
-# Each name is a page in _pages/. Add `label: Papers` to change the
-# navbar text without changing the URL.
 nav_pages:
-  - name: About
-  - name: Publications
-  - name: Service
-  - name: Talks
+  - name: publications
+  - name: service
+  - name: talks
 
 # ============================================================
 # STEP 5: Publications (assets/ref.bib)
 # ============================================================
-# Your name is bolded in the publication list. Write it exactly as it
-# appears in the rendered list ("Last, F. M."); list the longest form first.
 scholar:
-  last_name: Feynman
-  first_name: ["R. P.", "R."]
+  last_name: Chandariah
+  first_name: ["S. D.", "S."]
   style: citesty
   locale: en
   source: /assets/
@@ -72,51 +63,4 @@ scholar:
   query: "@*"
   bibliography_list_attributes:
     reversed: "reversed"
-  # Template-only fields, kept out of the copyable BibTeX
   bibtex_skip_fields: [abstract, month_numeric, file, selected, code, slides, video, poster, data]
-
-# ============================================================
-# Advanced Settings (you probably don't need to change these)
-# ============================================================
-permalink: /blog/:year/:title/
-
-include:
-  - _pages
-
-sass:
-  style: compressed
-  quiet_deps: true                # hide warnings from vendored Bootstrap SCSS
-  silence_deprecations: [import]  # Bootstrap 5.3 still uses @import
-  sourcemap: development          # no .map file in production builds
-
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-  parse_block_html: true
-
-plugins: ["jekyll/scholar", "jekyll-sitemap"]
-
-# Repository files that should not be published to the site
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - UPGRADING.md
-  - LICENSE
-  - setup.sh
-  - images/screenshots
-  - vendor
-  - .bundle
-  - node_modules
