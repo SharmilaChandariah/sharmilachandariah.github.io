@@ -13,40 +13,18 @@
 
   .pub-title {
     font-weight: 600;
-    font-size: 1.0625rem;
-    line-height: 1.45;
     color: var(--text-primary);
-
-    a {
-      color: inherit;
-      text-decoration: none;
-      background-image: none;
-
-      &:hover {
-        color: var(--accent);
-      }
-    }
   }
 
   .pub-authors {
     font-size: 0.9375rem;
     color: var(--text-secondary);
-    margin-top: var(--space-1);
-
-    strong {
-      color: var(--text-primary);
-      font-weight: 700;
-    }
   }
 
   .pub-venue {
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     color: var(--text-muted);
-    margin-top: var(--space-1);
-  }
-
-  .pub-venue-name {
-    color: var(--accent);
+    font-style: italic;
   }
 
   .pub-actions {
@@ -163,21 +141,5 @@
 
   &::placeholder {
     color: var(--text-muted);
-  }
-}
-
-// Publication lists: bulleted like rvoak.github.io, no numbers
-.pub-list ol.bibliography {
-  list-style: disc;
-  padding-left: var(--space-6);
-  margin-bottom: 0;
-
-  > li::marker {
-    color: var(--text-muted);
-  }
-
-  .pub-entry {
-    padding: var(--space-3) 0 var(--space-5);
-    border-bottom: none;
   }
 }

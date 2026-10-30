@@ -2,15 +2,23 @@
 ---
 
 {% comment %}
-  Entry layout (like rvoak.github.io): title / authors / venue, then buttons.
-  Author names are shown as "First Last"; the site owner's name is bold.
+  Bold the site owner's name. Uses scholar.last_name / scholar.first_name
+  from _config.yml; the first matching form wins.
 {% endcomment %}
-{% capture me_full %}{{ site.scholar.first_name | first }} {{ site.scholar.last_name }}{% endcapture %}
-{% assign clean_title = entry.title | remove: "{" | remove: "}" | replace: "\&", "&" %}
-{% assign venue = entry.journal | default: entry.booktitle | default: entry.howpublished | default: entry.publisher %}
-{% assign venue = venue | remove: "{" | remove: "}" | replace: "\&", "&" %}
-{% assign author_list = entry.author | remove: "{" | remove: "}" | split: " and " %}
-{% capture authors_html %}{% for a in author_list %}{% assign a = a | strip %}{% if a contains ", " %}{% assign parts = a | split: ", " %}{% capture display %}{{ parts[1] }} {{ parts[0] }}{% endcapture %}{% else %}{% assign display = a %}{% endif %}{% if display == me_full %}<strong>{{ display }}</strong>{% else %}{{ display }}{% endif %}{% unless forloop.last %}{% if forloop.rindex == 2 %} and {% else %}, {% endif %}{% endunless %}{% endfor %}{% endcapture %}
+{% assign ref = reference %}
+{% if site.scholar.last_name and site.scholar.first_name %}
+  {% assign bolded = false %}
+  {% for first in site.scholar.first_name %}
+    {% unless bolded %}
+      {% capture me %}{{ first }} {{ site.scholar.last_name }}{% endcapture %}
+      {% if ref contains me %}
+        {% capture me_bold %}<b>{{ me }}</b>{% endcapture %}
+        {% assign ref = ref | replace: me, me_bold %}
+        {% assign bolded = true %}
+      {% endif %}
+    {% endunless %}
+  {% endfor %}
+{% endif %}
 
 {% comment %}
   Links come from BibTeX fields:
@@ -31,9 +39,8 @@
 {% endif %}
 
 <div class="pub-entry" data-pub-searchable>
-  <div class="pub-title">{% if entry.url %}<a href="{{ entry.url }}" target="_blank">{{ clean_title }}</a>{% else %}{{ clean_title }}{% endif %}</div>
-  <div class="pub-authors">{{ authors_html }}</div>
-  <div class="pub-venue">{% if venue %}<span class="pub-venue-name">{{ venue }}</span>{% endif %}{% if entry.volume %}, vol. {{ entry.volume }}{% endif %}{% if entry.pages %}, {{ entry.pages | replace: "--", "&ndash;" }}{% endif %}{% if entry.year %}, {{ entry.year }}{% endif %}</div>
+  {% if entry.year %}<span class="year-badge">{{ entry.year }}</span>{% endif %}
+  <div class="text-justify">{{ ref }}</div>
 
   <div class="pub-actions">
     {% if has_pdf %}<a href="{{ entry.file | prepend: '/papers/' | relative_url }}" target="_blank" class="btn-pill btn-pdf">PDF</a>{% endif %}
