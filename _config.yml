@@ -1,22 +1,22 @@
 # ============================================================
 # STEP 1: Your Identity (required)
 # ============================================================
-name: "Richard Feynman"
-title: "Professor of Physics"
-institution: "California Institute of Technology"
-email: richard@university.edu
-photo: headshot.jpg  # place your photo in images/
+name: "Sharmila Devi Chandariah"
+title: "Senior Technical Lead"
+institution: "Insurance & Financial Services Technology"
+email: sharmiladevichandariah@ieee.org
+photo: sharmila.jpg      # must match the photo file you upload to images/
 
 # ============================================================
 # STEP 2: Your Links (optional -- leave blank to hide an icon)
 # ============================================================
 links:
-  google_scholar: "https://scholar.google.com/citations?user=B7vSqZsAAAAJ"
-  github: "https://github.com/"
-  researchgate: "https://www.researchgate.net/"
-  orcid: ""
+  google_scholar: 
+  github: "https://github.com/sharmilachandariah.github.io"
+  researchgate: ""
+  orcid: "0009-0009-6530-6450"
   twitter: ""
-  linkedin: ""
+  linkedin: "www.linkedin.com/in/sharmiladevichandariah"
   cv: ""  # e.g., "papers/cv.pdf"
 
 # ============================================================
@@ -47,14 +47,10 @@ analytics:
 # Each name is a page in _pages/. Add `label: Papers` to change the
 # navbar text without changing the URL.
 nav_pages:
-  - name: about
-  - name: publications
-  - name: talks
-  - name: research
-  - name: software
-  - name: team
-  - name: teaching
-  - name: blog
+  - name: About
+  - name: Publications
+  - name: Service
+  - name: Talks
 
 # ============================================================
 # STEP 5: Publications (assets/ref.bib)
